@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 //import Tweets from './Otros/views/Tweets/Tweets.jsx';
 import Land from './Land.jsx';
-import Salas from "./Salas.jsx";
+
 import Equipos from "./Equipos.jsx";
 import Diagnostico from "./Diagnostico.jsx";
 import SoporteVital from "./SoporteVital.jsx";
@@ -16,6 +16,7 @@ import Tratamiento from "./Tratamiento.jsx";
 import IngresarPaciente from "./IngresarPaciente.jsx";
 import Login from './views/Login/Login.jsx';
 import SalasInfo from "./BaseDatos/SalasInfo.jsx"
+import Personal from "./BaseDatos/Personal.jsx"
 import App from './App.jsx';
 import './index.css'
 import '@fontsource-variable/inter';
@@ -35,11 +36,11 @@ const router = createBrowserRouter([
           },
           {
             path: 'salas',
-            element: <Salas />
+            element: <SalasInfo />
           },
           {
             path: 'salasinfo',
-            element: <SalasInfo />
+            element: <Personal/>
           },
           {
             path: 'Equipos',
